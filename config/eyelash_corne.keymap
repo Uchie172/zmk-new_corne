@@ -65,10 +65,10 @@
 
         Number {
             bindings = <
-&kp LPAR        &kp RPAR  &none  &none  &none      &none                  &none         &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp PLUS         &none
-&kp LBKT        &kp RBKT  &none  &none  &none      &none           &none  &none  &none  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &none
-&kp LEFT_BRACE  &kp RBRC  &none  &none  &none      &none  &none           &none         &kp EQUAL      &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
-                                 &none  &kp LSHFT  &none                                &kp ENTER      &kp N0  &kp DOT
+&none  &kp LPAR  &kp RPAR           &none  &none      &none                  &none         &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp PLUS         &kp BACKSPACE
+&none  &kp LBKT  &kp RIGHT_BRACKET  &none  &none      &none           &none  &none  &none  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &none
+&none  &kp LBRC  &kp RIGHT_BRACE    &none  &none      &none  &none           &none         &kp EQUAL      &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
+                                    &none  &kp LSHFT  &none                                &kp ENTER      &kp N0  &kp DOT
             >;
         };
 

@@ -49,9 +49,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '6'}
   - {t: LANG1, h: BTRGB}
   Number:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
   - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -61,10 +61,10 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - +
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -77,9 +77,9 @@ layers:
   - {t: '6', s: ^}
   - KP SUBTRACT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
   - '}'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

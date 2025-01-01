@@ -65,10 +65,10 @@
 
         Number {
             bindings = <
-&kp LPAR        &kp RPAR  &kp  &kp  &kp  &kp              &kp       &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp PLUS         &kp
-&kp LBKT        &kp RBKT  &kp  &kp  &kp  &kp         &kp  &kp  &kp  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &kp
-&kp LEFT_BRACE  &kp RBRC  &kp  &kp  &kp  &kp  &kp         &kp       &kp EQUAL      &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
-                               &kp  &kp  &kp                        &kp ENTER      &kp N0  &kp DOT
+&kp LPAR        &kp RPAR  &none  &none  &none      &none                  &none         &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp PLUS         &none
+&kp LBKT        &kp RBKT  &none  &none  &none      &none           &none  &none  &none  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &none
+&kp LEFT_BRACE  &kp RBRC  &none  &none  &none      &none  &none           &none         &kp EQUAL      &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
+                                 &none  &kp LSHFT  &none                                &kp ENTER      &kp N0  &kp DOT
             >;
         };
 
@@ -90,11 +90,11 @@
             >;
         };
 
-        System {
+        BTRGB {
             bindings = <
 &none   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans           &trans  &trans
-&none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4            &trans  &trans  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &bootloader
-&trans  &bt BT_CLR     &trans         &trans         &bootloader    &sys_reset     &trans            &trans          &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &sys_reset
+&none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4            &trans  &trans  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &none
+&trans  &bt BT_CLR     &trans         &trans         &none          &none          &trans            &trans          &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &none
                                       &trans         &trans         &trans                                           &trans           &trans           &trans
             >;
         };

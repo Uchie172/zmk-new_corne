@@ -50,7 +50,12 @@
         CMD_TAB: CMD_TAB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LGUI &kp TAB>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_pause_for_release>,
+                <&kp TAB>,
+                <&macro_release>;
 
             label = "CMD_TAB";
         };

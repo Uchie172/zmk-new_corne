@@ -75,7 +75,7 @@
         TBD {
             bindings = <
 &none  &none  &none     &kp UP_ARROW    &none      &none                  &none         &none  &kp LC(UP_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(P)  &none  &none
-&none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none           &none  &none  &none  &none  &none             &none               &none      &none  &none
+&none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none           &none  &none  &none  &none  &sk LG(TAB)       &none               &none      &none  &none
 &none  &none  &none     &none           &none      &none  &none           &none         &none  &none             &none               &none      &none  &none
                         &none           &none      &none                                &none  &none             &none
             >;

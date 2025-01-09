@@ -46,6 +46,19 @@
         tap-ms = <30>;
     };
 
+    macros {
+        CMD_TAB: CMD_TAB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp TAB>,
+                <&macro_pause_for_release>;
+
+            label = "CMD_TAB";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -76,10 +89,12 @@
         TBD {
             bindings = <
 &none  &none  &none     &kp UP_ARROW    &none      &none                  &none         &none  &kp LC(UP_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(P)  &none  &none
-&none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none           &none  &none  &none  &none  &sk LG(TAB)       &kt LG(LS(TAB))     &none      &none  &none
+&none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none           &none  &none  &none  &none  &CMD_TAB          &kt LG(LS(TAB))     &none      &none  &none
 &none  &none  &none     &none           &none      &none  &none           &none         &none  &none             &none               &none      &none  &none
                         &none           &none      &none                                &none  &none             &none
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Fn_SS {

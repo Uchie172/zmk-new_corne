@@ -55,7 +55,8 @@
                 <&kp LGUI>,
                 <&macro_tap>,
                 <&kp TAB>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "CMD_TAB";
         };

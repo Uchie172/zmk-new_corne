@@ -45,20 +45,12 @@
         tap-ms = <30>;
     };
 
-    macros {
-        CMD_TAB: CMD_TAB {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LG(TAB)>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LGUI>;
+    combos {
+        compatible = "zmk,combos";
 
-            label = "CMD_TAB";
+        BrowseMode {
+            bindings = <&to 5>;
+            key-positions = <29 30>;
         };
     };
 
@@ -89,7 +81,7 @@
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
-        TBD {
+        Layer_2 {
             bindings = <
 &none  &none  &none     &kp UP_ARROW    &none      &none                  &none         &none  &kp LC(UP_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(P)  &none  &none
 &none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none           &none  &none  &none  &none  &kp LC(LEFT)      &kp LC(RIGHT)       &none      &none  &none
@@ -98,9 +90,10 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "Movement";
         };
 
-        Fn_SS {
+        Layer_3 {
             bindings = <
 &none  &none  &none  &none  &none  &none                  &none         &kp F7                &kp F8                &kp F9          &kp F10                   &kp F11                   &kp F12
 &none  &none  &none  &none  &none  &none           &none  &none  &none  &kp F1                &kp F2                &kp F3          &kp F4                    &kp F5                    &kp F6
@@ -109,6 +102,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "Fn_SS";
         };
 
         BT-RGB {
@@ -120,6 +114,18 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
+        };
+
+        layer_5 {
+            bindings = <
+&to 0  &kp        &kp        &kp              &kp LG(LS(R))  &kp LG(J)                                       &kp       &kp  &kp  &kp        &kp         &kp  &kp
+&kp    &kp LG(P)  &kp        &kp LC(LS(TAB))  &kp LC(TAB)    &kp LG(LS(BACKSLASH))                      &kp  &kp  &kp  &kp  &kp  &kp        &kp         &kp  &kp
+&kp    &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &kp                    &kp LG(NUMBER_0)         &kp       &kp  &kp  &kp COMMA  &kp PERIOD  &kp  &kp
+                             &kp LGUI         &kp LS(SPACE)  &kp SPACE                                                 &kp  &kp  &kp
+            >;
+
+            label = "Browsing";
+            sensor-bindings = <&inc_dec_kp LG(KP_PLUS) LG(KP_MINUS)>;
         };
     };
 };

@@ -53,6 +53,12 @@
             key-positions = <29 30>;
             layers = <0>;
         };
+
+        Media {
+            bindings = <&to 5>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -108,10 +114,10 @@
 
         layer_4 {
             bindings = <
-&to 0  &none      &none      &kp LG(R)        &kp LG(LS(R))  &kp LG(J)                                      &kp UP_ARROW               &none  &none  &none          &none           &none  &kp LG(NUMBER_0)
-&none  &none      &none      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LS(LG(BACKSLASH))                &kp LEFT  &kp ENTER       &kp RIGHT  &none  &none  &none          &none           &none  &kp LG(MINUS)
-&none  &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &none                  &kp K_MUTE              &kp DOWN_ARROW             &none  &none  &kp LG(COMMA)  &kp LG(PERIOD)  &none  &kp LG(PLUS)
-                             &kp LGUI         &kp LS(SPACE)  &kp SPACE                                                                 &none  &none  &none
+&to 0   &none      &none      &kp LG(R)        &kp LG(LS(R))  &kp LG(J)                                      &kp UP_ARROW               &none  &none  &none          &none           &none  &kp LG(NUMBER_0)
+&tog 0  &none      &none      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LS(LG(BACKSLASH))                &kp LEFT  &kp ENTER       &kp RIGHT  &none  &none  &none          &none           &none  &kp LG(MINUS)
+&none   &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &none                  &kp K_MUTE              &kp DOWN_ARROW             &none  &none  &kp LG(COMMA)  &kp LG(PERIOD)  &none  &kp LG(PLUS)
+                              &kp LGUI         &kp LS(SPACE)  &kp SPACE                                                                 &none  &none  &none
             >;
 
             label = "Browse";
@@ -120,7 +126,7 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&tog 0  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
@@ -131,7 +137,7 @@
 
         System {
             bindings = <
-&to 0   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                          &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans           &trans  &trans
+&tog 0  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                          &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans           &trans  &trans
 &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                 &trans  &trans  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &none
 &trans  &bt BT_CLR     &trans         &trans         &none          &none          &bootloader            &trans          &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &none
                                       &trans         &trans         &trans                                                &trans           &trans           &trans

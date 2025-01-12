@@ -108,16 +108,5 @@
 
             sensor-bindings = <&rgb_encoder>;
         };
-
-        layer_5 {
-            bindings = <
-&to 0  &kp        &kp        &kp              &kp LG(LS(R))  &kp LG(J)                                       &kp       &kp  &kp  &kp        &kp         &kp  &kp
-&kp    &kp LG(P)  &kp        &kp LC(LS(TAB))  &kp LC(TAB)    &kp LG(LS(BACKSLASH))                      &kp  &kp  &kp  &kp  &kp  &kp        &kp         &kp  &kp
-&kp    &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &kp                    &kp LG(NUMBER_0)         &kp       &kp  &kp  &kp COMMA  &kp PERIOD  &kp  &kp
-                             &kp LGUI         &kp LS(SPACE)  &kp SPACE                                                 &kp  &kp  &kp
-            >;
-
-            label = "Browsing";
-        };
     };
 };

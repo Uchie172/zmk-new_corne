@@ -45,14 +45,7 @@
         tap-ms = <30>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        BrowseMode {
-            bindings = <&to 5>;
-            key-positions = <29 30>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";

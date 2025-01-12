@@ -119,10 +119,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&to 0  &none      &none      &none            &kp LG(LS(R))  &kp LG(J)                              &none         &none  &none  &none          &none           &none  &none
+&none  &none      &none      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LS(LG(BACKSLASH))           &none  &none  &none  &none  &none  &none          &none           &none  &kp LG(KP_MINUS)
+&none  &kp LG(Z)  &kp LG(W)  &none            &none          &none                  &none           &none         &none  &none  &kp LG(COMMA)  &kp LG(PERIOD)  &none  &kp LG(KP_PLUS)
+                             &kp LGUI         &kp BACKSPACE  &kp SPACE                                            &none  &none  &none
             >;
 
             label = "Browse";

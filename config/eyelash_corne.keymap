@@ -45,7 +45,15 @@
         tap-ms = <30>;
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Browse {
+            bindings = <&to 5>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -107,6 +115,17 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "Browse";
         };
     };
 };

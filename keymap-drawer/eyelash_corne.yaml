@@ -45,7 +45,7 @@ layers:
   - {t: LANG2, h: LGUI}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', h: Number}
-  - {t: '$$mdi:backspace$$', h: TBD}
+  - {t: '$$mdi:backspace$$', h: Movement}
   - {t: '$$mdi:keyboard-return$$', h: Fn_SS}
   - {t: LANG1, h: BT-RGB}
   Number:
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '0', s: )}
   - {t: ., s: '>'}
-  TBD:
+  Movement:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -244,3 +244,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  Browsing:
+  - {t: QWERTY, h: toggle}
+  - ''
+  - ''
+  - ''
+  - Gui+Sft+R
+  - Gui+J
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+P
+  - ''
+  - Ctl+Sft+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - {t: Gui+Sft+\, s: Gui+Sft+|}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - Gui+W
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - ''
+  - Gui+0
+  - ''
+  - ''
+  - ''
+  - {t: ',', s: <}
+  - .
+  - ''
+  - ''
+  - LGUI
+  - Sft+$$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - ''
+  - ''
+  - ''
+combos:
+- p: [29, 30]
+  k: {t: Browsing, h: toggle}

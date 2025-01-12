@@ -109,7 +109,7 @@ layers:
   - Ctl+$$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-down-bold$$
   - Ctl+P
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+Alt+Ctl+N
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
@@ -135,7 +135,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Alt+Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

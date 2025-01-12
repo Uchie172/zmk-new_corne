@@ -293,6 +293,3 @@ layers:
   - ''
   - ''
   - ''
-combos:
-- p: [29, 30]
-  k: {t: Browsing, h: toggle}

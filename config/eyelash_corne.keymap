@@ -151,8 +151,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        SystemLayer {
-            if-layers = <0>;
+        System {
+            if-layers = <1 2>;
             then-layer = <6>;
         };
     };

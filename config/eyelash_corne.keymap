@@ -116,7 +116,7 @@
             bindings = <
 &to 0  &none      &none      &kp LG(R)        &kp LG(LS(R))  &kp LG(J)                                      &kp UP_ARROW               &none  &none  &none          &none           &none  &kp LG(NUMBER_0)
 &none  &none      &none      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LS(LG(BACKSLASH))                &kp LEFT  &kp ENTER       &kp RIGHT  &none  &none  &none          &none           &none  &kp LG(MINUS)
-&none  &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &none                  &kp K_MUTE              &kp DOWN_ARROW             &none  &none  &kp LG(COMMA)  &kp LG(PERIOD)  &none  &kp LG(PLUS)
+&none  &kp LG(Z)  &kp LG(W)  &kp LG(C)        &kp LG(V)      &none                  &kp K_MUTE              &kp DOWN_ARROW             &none  &none  &kp LS(COMMA)  &kp LS(PERIOD)  &none  &kp LG(PLUS)
                              &kp LGUI         &kp LS(SPACE)  &kp SPACE                                                                 &none  &none  &none
             >;
 

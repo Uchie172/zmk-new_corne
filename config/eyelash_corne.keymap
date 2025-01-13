@@ -126,13 +126,14 @@
 
         layer_5 {
             bindings = <
-&to 0  &none  &none  &none  &none      &none                     &kp UP_ARROW               &none            &none              &none       &none  &none  &none
-&none  &none  &none  &none  &none      &none           &kp LEFT  &none           &kp RIGHT  &none            &none              &none       &none  &none  &none
-&none  &none  &none  &none  &none      &none  &none              &kp DOWN_ARROW             &none            &none              &none       &none  &none  &none
-                     &none  &kp SPACE  &none                                                &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp K_MUTE
+&to 0  &none  &kp LG(LC(T))  &kp LG(LC(A))             &kp LC(LG(S))         &kp LC(LG(G))                             &kp LG(LEFT)              &none            &none              &none       &none  &none  &none
+&none  &none  &none          &kp LG(LC(P))             &kp LG(LC(F))         &kp LG(S)                       &kp LEFT  &none          &kp RIGHT  &none            &none              &none       &none  &none  &none
+&none  &none  &none          &kp LS(LG(LEFT_BRACKET))  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none              &kp LG(RIGHT)             &none            &none              &none       &none  &none  &none
+                             &none                     &kp SPACE             &none                                                               &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp K_MUTE
             >;
 
             label = "Media";
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         System {

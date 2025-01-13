@@ -234,8 +234,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Gui+,', s: Gui+<}
-  - Gui+.
+  - {t: 'Sft+,', s: Sft+<}
+  - Sft+.
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui++
   - LGUI

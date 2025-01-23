@@ -44,10 +44,10 @@ layers:
   - {t: '=', s: +}
   - {t: LANG2, h: LGUI}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: naginata}
-  - {t: '$$mdi:backspace$$', h: Number}
-  - {t: '$$mdi:keyboard-return$$', h: Movement}
-  - {t: LANG1, h: Media}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
+  - {t: '$$mdi:backspace$$', h: Movement}
+  - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
+  - {t: LANG1, h: Settings}
   naginata:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - '&ng Q'
@@ -93,7 +93,7 @@ layers:
   - {t: '=', s: +}
   - {t: LANG2, h: LGUI}
   - '&ng SPACE'
-  - {t: '$$mdi:backspace-reverse-outline$$', h: naginata, type: held}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: naginata}
   - {t: '$$mdi:backspace$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Movement}
   - {t: LANG1, h: Media}
@@ -142,8 +142,8 @@ layers:
   - KP ASTERISK
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: '$$mdi:keyboard-return$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
   - {t: '0', s: )}
   - {t: ., s: '>'}
   Movement:
@@ -191,9 +191,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
   - LGUI
   Shortcuts:
   - MUTE
@@ -242,7 +242,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Browse:
   - {t: QWERTY, h: toggle}
@@ -338,7 +338,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-high$$
   - $$mdi:volume-low$$
   - {t: MUTE, type: held}
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
 combos:
 - p: [29, 30]
   k: {t: Shortcuts, h: toggle}

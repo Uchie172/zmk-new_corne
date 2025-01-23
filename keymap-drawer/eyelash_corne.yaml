@@ -93,10 +93,10 @@ layers:
   - {t: '=', s: +}
   - {t: LANG2, h: LGUI}
   - '&ng SPACE'
-  - {t: '$$mdi:backspace-reverse-outline$$', h: naginata}
-  - {t: '$$mdi:backspace$$', h: Number}
-  - {t: '$$mdi:keyboard-return$$', h: Movement}
-  - {t: LANG1, h: Media}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
+  - {t: '$$mdi:backspace$$', h: Movement}
+  - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
+  - {t: LANG1, h: Settings}
   Number:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
@@ -143,7 +143,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '0', s: )}
   - {t: ., s: '>'}
   Movement:
@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: held alternate}
+  - $$mdi:apple-keyboard-shift$$
   - LGUI
   Shortcuts:
   - MUTE
@@ -341,7 +341,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-high$$
   - $$mdi:volume-low$$
-  - {t: MUTE, type: held}
+  - MUTE
   Settings:
   - {t: QWERTY, h: toggle}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}

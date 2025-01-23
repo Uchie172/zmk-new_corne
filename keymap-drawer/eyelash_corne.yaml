@@ -92,7 +92,7 @@ layers:
   - '&ng FSLH'
   - {t: '=', s: +}
   - {t: LANG2, h: LGUI}
-  - $$mdi:keyboard-space$$
+  - '&ng SPACE'
   - {t: '$$mdi:backspace-reverse-outline$$', h: naginata, type: held}
   - {t: '$$mdi:backspace$$', h: Number}
   - {t: '$$mdi:keyboard-return$$', h: Movement}

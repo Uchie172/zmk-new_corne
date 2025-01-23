@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <behaviors/naginata.dtsi>
 
 /*
 
@@ -45,19 +46,46 @@
         tap-ms = <30>;
     };
 
+    macros {
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 1>
+                ;
+        };
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
-
         Browse {
             bindings = <&to 4>;
             key-positions = <29 30>;
             layers = <0>;
         };
-
         Media {
             bindings = <&to 5>;
             key-positions = <14 15>;
             layers = <0>;
+        };
+        combo_ng_on {
+            timeout-ms = <300>;
+            key-positions = <22 23>; // H, Jのキー位置に書き換えてください
+            bindings = <&ng_on>;
+            layers = <0>; // デフォルトレイヤーが0の前提
+        };
+        combo_ng_off {
+            timeout-ms = <300>;
+            key-positions = <17 18>; // F, Gのキー位置に書き換えてください
+            bindings = <&ng_off>;
+            layers = <0 1>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
         };
     };
 
@@ -76,7 +104,17 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        Layer_1 {
+        naginata_layer { 
+            bindings = <
+            // +----------+----------+----------+----------+----------+----------+----------+----------+----------+----------
+                &ng Q      &ng W      &ng E      &ng R      &ng T      &ng Y      &ng U      &ng I      &ng O      &ng P
+                &ng A      &ng S      &ng D      &ng F      &ng G      &ng H      &ng J      &ng K      &ng L      &ng SEMI
+                &ng Z      &ng X      &ng C      &ng V      &ng B      &ng N      &ng M      &ng COMMA  &ng DOT    &ng SLASH
+                                      &kp LSHIFT &mo LOWER  &ng SPACE  &ng ENTER  &mo RAISE  &kp RCTRL
+                >;
+        };
+
+        Layer_2 {
             bindings = <
 &none  &kp LPAR  &kp RPAR           &none  &none      &none                                      &kp LC(UP_ARROW)                   &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp KP_PLUS      &kp BACKSPACE
 &none  &kp LBKT  &kp RIGHT_BRACKET  &none  &none      &kp LC(LG(F))                &kp LC(LEFT)  &kp LC(P)           &kp LC(RIGHT)  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &kp COLON
@@ -88,7 +126,7 @@
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
-        Layer_2 {
+        Layer_3 {
             bindings = <
 &none  &none     &none     &kp UP_ARROW    &kp PAGE_UP    &none                    &none         &none  &kp LC(UP_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(P)  &none  &none
 &none  &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp END           &none  &none  &none  &none  &kp LC(LEFT)      &kp LC(RIGHT)       &none      &none  &none
@@ -100,7 +138,7 @@
             label = "Movement";
         };
 
-        Layer_3 {
+        Layer_4 {
             bindings = <
 &kp K_MUTE    &none  &none  &none  &none  &none                  &none         &kp F7                &kp F8                &kp F9          &kp F10                   &kp F11                   &kp F12
 &kp C_VOL_DN  &none  &none  &none  &none  &none           &none  &none  &none  &kp F1                &kp F2                &kp F3          &kp F4                    &kp F5                    &kp F6
@@ -112,7 +150,7 @@
             label = "Shortcuts";
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
 &to 0  &none      &none      &kp LG(R)        &kp LG(LS(R))  &kp LG(J)                                      &kp UP_ARROW               &none  &none  &none          &none           &none  &kp LG(NUMBER_0)
 &none  &none      &none      &kp LC(LS(TAB))  &kp LC(TAB)    &kp LS(LG(BACKSLASH))                &kp LEFT  &kp ENTER       &kp RIGHT  &none  &none  &none          &none           &none  &kp LG(MINUS)
@@ -124,7 +162,7 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_5 {
+        layer_6 {
             bindings = <
 &to 0  &none  &kp LG(LC(T))  &kp LG(LC(A))             &kp LC(LG(S))         &kp LC(LG(G))                             &kp LG(LEFT)              &none            &none              &none       &none  &none  &none
 &none  &none  &none          &kp LG(LC(P))             &kp LG(LC(F))         &kp LG(S)                       &kp LEFT  &none          &kp RIGHT  &none            &none              &none       &none  &none  &none

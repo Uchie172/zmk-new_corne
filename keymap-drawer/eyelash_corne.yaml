@@ -42,13 +42,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '=', s: +}
-  - {t: LANG2, h: LGUI}
+  - {t: '$$mdi:keyboard-esc$$', h: LGUI}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}
   - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
-  - {t: LANG1, h: Settings}
-  naginata:
+  - {t: '$$mdi:keyboard-tab$$', h: Settings}
+  NAGINATA:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - '&ng Q'
   - '&ng W'
@@ -91,12 +91,12 @@ layers:
   - '&ng DOT'
   - '&ng FSLH'
   - {t: '=', s: +}
-  - {t: LANG2, h: LGUI}
+  - '&ng_off'
   - '&ng SPACE'
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}
   - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
-  - {t: LANG1, h: Settings}
+  - $$mdi:keyboard-tab$$
   Number:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
@@ -403,4 +403,4 @@ combos:
   l: [QWERTY]
 - p: [17, 18]
   k: '&ng_off'
-  l: [QWERTY, naginata]
+  l: [QWERTY, NAGINATA]

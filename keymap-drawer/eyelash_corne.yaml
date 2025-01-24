@@ -91,7 +91,7 @@ layers:
   - '&ng DOT'
   - '&ng FSLH'
   - {t: '=', s: +}
-  - '&ng_off'
+  - $$mdi:keyboard-esc$$
   - '&ng SPACE'
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}

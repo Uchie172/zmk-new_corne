@@ -96,10 +96,10 @@
         Layer_0 {
             display-name = "QWERTY";
             bindings = <
-&mt LALT ESCAPE       &kp Q  &kp W  &kp E           &kp R      &kp T                              &kp UP                &kp Y            &kp U        &kp I        &kp O    &kp P     &kp SINGLE_QUOTE
-&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D           &kp F      &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K        &kp L    &kp SEMI  &kp MINUS
-&td0                  &kp Z  &kp X  &kp C           &kp V      &kp B      &kp K_MUTE              &kp DOWN              &kp N            &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp EQUAL
-                                    &mt LGUI LANG2  &kp SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &lt 7 LANG1
+&mt LALT ESCAPE       &kp Q  &kp W  &kp E            &kp R      &kp T                              &kp UP                &kp Y            &kp U        &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D            &kp F      &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp MINUS
+&td0                  &kp Z  &kp X  &kp C            &kp V      &kp B      &kp K_MUTE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                                    &mt LGUI ESCAPE  &kp SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &lt 7 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -107,13 +107,14 @@
 
         naginata_layer {
             bindings = <
-&mt LALT ESCAPE       &ng Q  &ng W  &ng E           &ng R      &ng T                              &kp UP                &ng Y            &ng U        &ng I        &ng O    &ng P     &kp SINGLE_QUOTE
-&mt LEFT_CONTROL TAB  &ng A  &ng S  &ng D           &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J        &ng K        &ng L    &ng SEMI  &kp MINUS
-&td0                  &ng Z  &ng X  &ng C           &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M        &ng COMMA    &ng DOT  &ng FSLH  &kp EQUAL
-                                    &mt LGUI LANG2  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &lt 7 LANG1
+&mt LALT ESCAPE       &ng Q  &ng W  &ng E    &ng R      &ng T                              &kp UP                &ng Y            &ng U        &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
+&mt LEFT_CONTROL TAB  &ng A  &ng S  &ng D    &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J        &ng K      &ng L    &ng SEMI  &kp MINUS
+&td0                  &ng Z  &ng X  &ng C    &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M        &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
+                                    &ng_off  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "NAGINATA";
         };
 
         Layer_2 {

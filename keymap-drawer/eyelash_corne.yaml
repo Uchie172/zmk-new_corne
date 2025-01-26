@@ -414,11 +414,8 @@ combos:
   k: Ctl+K
   l: [NAGINATA]
 - p: [26, 40]
-  k: GLOBE
+  k: Gui+Ctl+$$mdi:keyboard-space$$
   l: [NAGINATA]
 - p: [23, 37]
   k: Ctl+J
-  l: [NAGINATA]
-- p: [39, 25]
-  k: Ctl+L
   l: [NAGINATA]

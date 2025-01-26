@@ -93,6 +93,12 @@
             bindings = <&to 7>;
             key-positions = <1 2>;
         };
+
+        nakaguro {
+            bindings = <&kp SLASH>;
+            key-positions = <23 24 5>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -112,9 +118,9 @@
 
         naginata_layer {
             bindings = <
-&kp ESCAPE  &ng Q  &ng W  &ng E    &ng R      &ng T                              &kp UP                &ng Y            &ng U        &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
-&kp TAB     &ng A  &ng S  &ng D    &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J        &ng K      &ng L    &ng SEMI  &kp MINUS
-&td0        &ng Z  &ng X  &ng C    &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M        &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
+&kp ESCAPE  &ng Q  &ng W  &ng E    &ng R      &ng T                              &kp UP                &ng Y            &ng U      &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
+&kp TAB     &ng A  &ng S  &ng D    &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J      &ng K      &ng L    &ng SEMI  &kp MINUS
+&td0        &ng Z  &ng X  &ng C    &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M      &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
                           &ng_off  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &ng ENTER  &kp TAB
             >;
 

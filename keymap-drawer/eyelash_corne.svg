@@ -525,14 +525,14 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<a href="#Shortcuts">
-<text x="112" y="154" class="combo tap layer-activator"><tspan style="font-size: 67%">Shortcuts</tspan></text>
+<a href="#Browse">
+<text x="112" y="154" class="combo tap layer-activator">Browse</text>
 </a><text x="112" y="165" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
-<a href="#Browse">
-<text x="112" y="98" class="combo tap layer-activator">Browse</text>
+<a href="#Media">
+<text x="112" y="98" class="combo tap layer-activator">Media</text>
 </a><text x="112" y="109" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">

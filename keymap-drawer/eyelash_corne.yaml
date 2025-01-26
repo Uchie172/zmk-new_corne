@@ -409,12 +409,6 @@ combos:
 - p: [23, 24, 5]
   k: {t: /, s: '?'}
   l: [NAGINATA]
-- p: [23, 37]
-  k: F6
-  l: [NAGINATA]
 - p: [38, 24]
   k: F7
-  l: [NAGINATA]
-- p: [39, 25]
-  k: F8
   l: [NAGINATA]

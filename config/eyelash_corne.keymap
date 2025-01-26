@@ -104,6 +104,20 @@
             timeout-ms = <150>;
             require-prior-idle-ms = <0>;
         };
+
+        Kata {
+            bindings = <&kp F7>;
+            key-positions = <24 38>;
+            layers = <1>;
+            timeout-ms = <150>;
+        };
+
+        Emo {
+            bindings = <&kp CAPS>;
+            key-positions = <26 40>;
+            layers = <1>;
+            timeout-ms = <150>;
+        };
     };
 
     keymap {

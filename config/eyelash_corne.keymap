@@ -106,17 +106,31 @@
         };
 
         Kata {
-            bindings = <&kp F7>;
+            bindings = <&kp LC(K)>;
             key-positions = <24 38>;
             layers = <1>;
             timeout-ms = <150>;
         };
 
         Emo {
-            bindings = <&kp CAPS>;
+            bindings = <&kp GLOBE>;
             key-positions = <26 40>;
             layers = <1>;
             timeout-ms = <150>;
+        };
+
+        Hira {
+            bindings = <&kp LC(J)>;
+            key-positions = <23 37>;
+            timeout-ms = <150>;
+            layers = <1>;
+        };
+
+        Han {
+            bindings = <&kp LC(L)>;
+            key-positions = <39 25>;
+            timeout-ms = <150>;
+            layers = <1>;
         };
     };
 

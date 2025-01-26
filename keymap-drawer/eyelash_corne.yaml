@@ -42,14 +42,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '=', s: +}
-  - {t: '$$mdi:keyboard-esc$$', h: LGUI}
+  - LGUI
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}
   - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
-  - {t: '$$mdi:keyboard-tab$$', h: Settings}
+  - '&ng_on'
   NAGINATA:
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:keyboard-esc$$
   - '&ng Q'
   - '&ng W'
   - '&ng E'
@@ -62,7 +62,7 @@ layers:
   - '&ng O'
   - '&ng P'
   - {t: '''', s: '"'}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:keyboard-tab$$
   - '&ng A'
   - '&ng S'
   - '&ng D'
@@ -91,7 +91,7 @@ layers:
   - '&ng DOT'
   - '&ng FSLH'
   - {t: '=', s: +}
-  - $$mdi:keyboard-esc$$
+  - '&ng_off'
   - '&ng SPACE'
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}
@@ -101,11 +101,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
   - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
+  - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+$$mdi:arrow-up-bold$$
-  - {t: '`', s: '~'}
+  - KP EQUAL
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -114,13 +114,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
+  - '"'
   - Ctl+Gui+F
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+P
   - Ctl+$$mdi:arrow-right-bold$$
-  - {t: \, s: '|'}
+  - KP MULTIPLY
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -129,12 +129,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
   - '}'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, s: '|'}
+  - '|'
   - Sft+Ctl+S
   - {t: Gui+0, s: Gui+)}
   - Ctl+$$mdi:arrow-down-bold$$
-  - KP EQUAL
+  - ':'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -237,7 +237,7 @@ layers:
   - {t: Sft+Gui+5, s: Sft+Gui+%}
   - Sft+Ctl+Gui+3
   - Sft+Ctl+Gui+4
-  - {t: Sft+Gui+Ctl+5, s: Sft+Gui+Ctl+%}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -390,7 +390,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [29, 30]
   k: {t: Shortcuts, h: toggle}
@@ -404,3 +404,5 @@ combos:
 - p: [17, 18]
   k: '&ng_off'
   l: [QWERTY, NAGINATA]
+- p: [1, 2]
+  k: {t: Settings, h: toggle}

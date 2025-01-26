@@ -113,7 +113,7 @@
         };
 
         Emo {
-            bindings = <&kp GLOBE>;
+            bindings = <&kp LG(LC(SPACE))>;
             key-positions = <26 40>;
             layers = <1>;
             timeout-ms = <150>;
@@ -122,13 +122,6 @@
         Hira {
             bindings = <&kp LC(J)>;
             key-positions = <23 37>;
-            timeout-ms = <150>;
-            layers = <1>;
-        };
-
-        Han {
-            bindings = <&kp LC(L)>;
-            key-positions = <39 25>;
             timeout-ms = <150>;
             layers = <1>;
         };

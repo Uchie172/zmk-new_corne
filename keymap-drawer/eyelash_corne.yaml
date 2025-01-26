@@ -411,8 +411,14 @@ combos:
   k: {t: /, s: '?'}
   l: [NAGINATA]
 - p: [24, 38]
-  k: F7
+  k: Ctl+K
   l: [NAGINATA]
 - p: [26, 40]
-  k: $$mdi:apple-keyboard-caps$$
+  k: GLOBE
+  l: [NAGINATA]
+- p: [23, 37]
+  k: Ctl+J
+  l: [NAGINATA]
+- p: [39, 25]
+  k: Ctl+L
   l: [NAGINATA]

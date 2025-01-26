@@ -94,6 +94,7 @@
         System {
             bindings = <&to 7>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         nakaguro {
@@ -102,14 +103,6 @@
             layers = <1>;
             timeout-ms = <150>;
             require-prior-idle-ms = <0>;
-        };
-
-        F7-Katakana {
-            bindings = <&kp F7>;
-            key-positions = <38 24>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <0>;
-            layers = <1>;
         };
     };
 

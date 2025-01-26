@@ -870,22 +870,12 @@ rect.held, rect.combo.held {
 <text x="280" y="94" class="combo tap"><tspan style="font-size: 86%">&amp;ng_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-2">
 <path d="M607,72 l103,16" class="combo"/>
 <path d="M607,72 l159,11" class="combo"/>
 <path d="M607,72 l-280,-29" class="combo"/>
 <rect rx="6" ry="6" x="593" y="59" width="28" height="26" class="combo"/>
 <text x="607" y="72" class="combo tap">/</text>
 <text x="607" y="61" class="combo shifted">?</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="770" y="99" width="28" height="26" class="combo"/>
-<text x="784" y="112" class="combo tap">F7</text>
 </g>
 </g>
 </g>
@@ -1165,12 +1155,6 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">.</text>
 <text x="0" y="-24" class="key shifted">&gt;</text>
 </g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-Movement">
@@ -1415,12 +1399,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">LGUI</text>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1678,12 +1656,6 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-Browse">
@@ -1940,12 +1912,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2211,12 +2177,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">MUTE</text>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2506,12 +2466,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
-<a href="#Settings">
-<text x="112" y="42" class="combo tap layer-activator"><tspan style="font-size: 75%">Settings</tspan></text>
-</a><text x="112" y="53" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

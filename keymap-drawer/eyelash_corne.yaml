@@ -410,3 +410,9 @@ combos:
 - p: [23, 24, 5]
   k: {t: /, s: '?'}
   l: [NAGINATA]
+- p: [24, 38]
+  k: F7
+  l: [NAGINATA]
+- p: [26, 40]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [NAGINATA]

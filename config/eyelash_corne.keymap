@@ -104,25 +104,9 @@
             require-prior-idle-ms = <0>;
         };
 
-        F6-Hiragana {
-            bindings = <&kp F6>;
-            key-positions = <23 37>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <0>;
-            layers = <1>;
-        };
-
         F7-Katakana {
             bindings = <&kp F7>;
             key-positions = <38 24>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <0>;
-            layers = <1>;
-        };
-
-        F8-HankakuKana {
-            bindings = <&kp F8>;
-            key-positions = <39 25>;
             timeout-ms = <150>;
             require-prior-idle-ms = <0>;
             layers = <1>;

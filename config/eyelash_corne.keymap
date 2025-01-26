@@ -100,8 +100,7 @@
             bindings = <&kp SLASH>;
             key-positions = <23 24 5>;
             layers = <1>;
-            slow-release;
-            timeout-ms = <15>;
+            timeout-ms = <(-15)>;
             require-prior-idle-ms = <0>;
         };
     };

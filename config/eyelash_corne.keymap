@@ -88,6 +88,11 @@
             bindings = <&ng_off>;
             layers = <0 1>;
         };
+
+        System {
+            bindings = <&to 7>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -96,10 +101,10 @@
         Layer_0 {
             display-name = "QWERTY";
             bindings = <
-&mt LALT ESCAPE       &kp Q  &kp W  &kp E            &kp R      &kp T                              &kp UP                &kp Y            &kp U        &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
-&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D            &kp F      &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp MINUS
-&td0                  &kp Z  &kp X  &kp C            &kp V      &kp B      &kp K_MUTE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                                    &mt LGUI ESCAPE  &kp SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &lt 7 TAB
+&mt LALT ESCAPE       &kp Q  &kp W  &kp E     &kp R      &kp T                              &kp UP                &kp Y            &kp U        &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D     &kp F      &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp MINUS
+&td0                  &kp Z  &kp X  &kp C     &kp V      &kp B      &kp K_MUTE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                                    &kp LGUI  &kp SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &ng_on
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -107,10 +112,10 @@
 
         naginata_layer {
             bindings = <
-&mt LALT ESCAPE       &ng Q  &ng W  &ng E       &ng R      &ng T                              &kp UP                &ng Y            &ng U        &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
-&mt LEFT_CONTROL TAB  &ng A  &ng S  &ng D       &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J        &ng K      &ng L    &ng SEMI  &kp MINUS
-&td0                  &ng Z  &ng X  &ng C       &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M        &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
-                                    &kp ESCAPE  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &kp TAB
+&kp ESCAPE  &ng Q  &ng W  &ng E    &ng R      &ng T                              &kp UP                &ng Y            &ng U        &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
+&kp TAB     &ng A  &ng S  &ng D    &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J        &ng K      &ng L    &ng SEMI  &kp MINUS
+&td0        &ng Z  &ng X  &ng C    &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M        &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
+                          &ng_off  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 4 ENTER  &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -119,10 +124,10 @@
 
         Layer_2 {
             bindings = <
-&none  &kp LPAR  &kp RPAR           &none  &none      &none                                      &kp LC(UP_ARROW)                   &kp GRAVE      &kp N7  &kp N8   &kp N9  &kp KP_PLUS      &kp BACKSPACE
-&none  &kp LBKT  &kp RIGHT_BRACKET  &none  &none      &kp LC(LG(F))                &kp LC(LEFT)  &kp LC(P)           &kp LC(RIGHT)  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &kp COLON
-&none  &kp LBRC  &kp RIGHT_BRACE    &none  &none      &kp LS(LC(S))  &kp LG(N0)                  &kp LC(DOWN_ARROW)                 &kp KP_EQUAL   &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
-                                    &none  &kp LSHFT  &none                                                                         &kp ENTER      &kp N0  &kp DOT
+&none  &kp LPAR  &kp RPAR           &kp GRAVE         &kp TILDE          &none                                      &kp LC(UP_ARROW)                   &kp KP_EQUAL     &kp N7  &kp N8   &kp N9  &kp KP_PLUS      &kp BACKSPACE
+&none  &kp LBKT  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LC(LG(F))                &kp LC(LEFT)  &kp LC(P)           &kp LC(RIGHT)  &kp KP_MULTIPLY  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &kp COLON
+&none  &kp LBRC  &kp RIGHT_BRACE    &kp BACKSLASH     &kp PIPE           &kp LS(LC(S))  &kp LG(N0)                  &kp LC(DOWN_ARROW)                 &kp COLON        &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
+                                    &none             &kp LSHFT          &none                                                                         &kp ENTER        &kp N0  &kp DOT
             >;
 
             label = "Number";
@@ -145,7 +150,7 @@
             bindings = <
 &kp K_MUTE    &none  &none  &none  &none  &none                  &none         &kp F7                &kp F8                &kp F9          &kp F10                   &kp F11                   &kp F12
 &kp C_VOL_DN  &none  &none  &none  &none  &none           &none  &none  &none  &kp F1                &kp F2                &kp F3          &kp F4                    &kp F5                    &kp F6
-&kp C_VOL_UP  &none  &none  &none  &none  &none  &none           &none         &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(LC(N5)))
+&kp C_VOL_UP  &none  &none  &none  &none  &none  &none           &none         &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &none
                             &none  &none  &none                                &none                 &none                 &none
             >;
 

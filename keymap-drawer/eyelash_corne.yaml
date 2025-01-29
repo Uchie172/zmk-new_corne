@@ -425,6 +425,6 @@ combos:
 - p: [17, 23, 24]
   k: '&ng_kakko1'
   l: [NAGINATA]
-- p: [23, 24, 15]
+- p: [24, 15, 25]
   k: '&ng_kakko2'
   l: [NAGINATA]

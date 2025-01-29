@@ -911,11 +911,11 @@ rect.held, rect.combo.held {
 <text x="588" y="88" class="combo tap"><tspan style="font-size: 60%">&amp;ng_kakko1</tspan></text>
 </g>
 <g class="combo combopos-6">
-<path d="M551,88 l159,2" class="combo"/>
-<path d="M551,88 l215,-4" class="combo"/>
-<path d="M551,88 l-392,2" class="combo"/>
-<rect rx="6" ry="6" x="537" y="75" width="28" height="26" class="combo"/>
-<text x="551" y="88" class="combo tap"><tspan style="font-size: 60%">&amp;ng_kakko2</tspan></text>
+<path d="M588,88 l177,-4" class="combo"/>
+<path d="M588,88 l-429,2" class="combo"/>
+<path d="M588,88 l233,2" class="combo"/>
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 60%">&amp;ng_kakko2</tspan></text>
 </g>
 </g>
 </g>

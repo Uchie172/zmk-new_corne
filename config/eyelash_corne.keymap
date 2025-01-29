@@ -123,7 +123,7 @@
             layers = <0>;
         };
 
-        nakaguro {
+        ng_nakaguro {
             bindings = <&kp SLASH>;
             key-positions = <23 24 5>;
             layers = <1>;
@@ -131,7 +131,7 @@
             require-prior-idle-ms = <0>;
         };
 
-        Kata {
+        ng_Kata {
             bindings = <&kp LC(K)>;
             key-positions = <24 38>;
             layers = <1>;
@@ -141,11 +141,11 @@
         Emo {
             bindings = <&kp LG(LC(SPACE))>;
             key-positions = <26 40>;
-            layers = <1>;
+            layers = <1 0>;
             timeout-ms = <150>;
         };
 
-        Hira {
+        ng_Hira {
             bindings = <&kp LC(J)>;
             key-positions = <23 37>;
             timeout-ms = <150>;
@@ -170,7 +170,7 @@
             bindings = <&ng_kakko2>;
             key-positions = <23 24 15>;
             layers = <1>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
             slow-release;
         };
     };

@@ -60,6 +60,32 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_PARENTHESIS &kp RPAR &kp LC(B)>;
+
+            label = "KAKKO";
+        };
+
+        ng_kakko1: ng_kakko1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_PARENTHESIS &kp RPAR &kp ENTER &kp LC(B)>;
+
+            label = "NG_KAKKO1";
+        };
+
+        ng_kakko2: ng_kakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_PARENTHESIS &kp RPAR>;
+
+            label = "NG_KAKKO2";
+        };
     };
 
     combos {
@@ -67,13 +93,13 @@
 
         Browse {
             bindings = <&to 5>;
-            key-positions = <29 30>;
+            key-positions = <29 14>;
             layers = <0>;
         };
 
         Media {
             bindings = <&to 6>;
-            key-positions = <14 15>;
+            key-positions = <15 30>;
             layers = <0>;
         };
 
@@ -93,7 +119,7 @@
 
         System {
             bindings = <&to 7>;
-            key-positions = <1 2>;
+            key-positions = <40 26 11>;
             layers = <0>;
         };
 
@@ -125,6 +151,28 @@
             timeout-ms = <150>;
             layers = <1>;
         };
+
+        kakko {
+            bindings = <&kakko>;
+            key-positions = <23 24 17>;
+            layers = <0>;
+            timeout-ms = <150>;
+        };
+
+        ng_kakko1 {
+            bindings = <&ng_kakko1>;
+            key-positions = <17 23 24>;
+            layers = <1>;
+            timeout-ms = <142>;
+        };
+
+        ng_kakko2 {
+            bindings = <&ng_kakko2>;
+            key-positions = <23 24 15>;
+            layers = <1>;
+            timeout-ms = <150>;
+            slow-release;
+        };
     };
 
     keymap {
@@ -147,7 +195,7 @@
 &kp ESCAPE  &ng Q  &ng W  &ng E    &ng R      &ng T                              &kp UP                &ng Y            &ng U      &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
 &kp TAB     &ng A  &ng S  &ng D    &ng F      &ng G                    &kp LEFT  &kp ENTER  &kp RIGHT  &ng H            &ng J      &ng K      &ng L    &ng SEMI  &kp MINUS
 &td0        &ng Z  &ng X  &ng C    &ng V      &ng B      &kp K_MUTE              &kp DOWN              &ng N            &ng M      &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
-                          &ng_off  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &ng ENTER  &kp TAB
+                          &ng_off  &ng SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &ng ENTER  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -219,7 +267,7 @@
 &to 0  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                         &none         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &none  &none
 &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                 &none  &none  &none  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &none  &none
 &none  &bt BT_CLR     &none          &none          &none          &none          &bootloader           &none         &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &none  &none
-                                     &none          &none          &none                                              &none            &none            &none
+                                     &bt BT_PRV     &bt BT_NXT     &none                                              &none            &none            &none
             >;
 
             sensor-bindings = <&rgb_encoder>;

@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Movement}
   - '&ng ENTER'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Number:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
@@ -385,17 +385,17 @@ layers:
   - RGB SPD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [29, 30]
+- p: [29, 14]
   k: {t: Browse, h: toggle}
   l: [QWERTY]
-- p: [14, 15]
+- p: [15, 30]
   k: {t: Media, h: toggle}
   l: [QWERTY]
 - p: [22, 23]
@@ -404,7 +404,7 @@ combos:
 - p: [17, 18]
   k: '&ng_off'
   l: [QWERTY, NAGINATA]
-- p: [1, 2]
+- p: [40, 26, 11]
   k: {t: Settings, h: toggle}
   l: [QWERTY]
 - p: [23, 24, 5]
@@ -418,4 +418,13 @@ combos:
   l: [NAGINATA]
 - p: [23, 37]
   k: Ctl+J
+  l: [NAGINATA]
+- p: [23, 24, 17]
+  k: '&kakko'
+  l: [QWERTY]
+- p: [17, 23, 24]
+  k: '&ng_kakko1'
+  l: [NAGINATA]
+- p: [23, 24, 15]
+  k: '&ng_kakko2'
   l: [NAGINATA]

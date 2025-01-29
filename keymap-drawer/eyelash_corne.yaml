@@ -415,7 +415,7 @@ combos:
   l: [NAGINATA]
 - p: [26, 40]
   k: Gui+Ctl+$$mdi:keyboard-space$$
-  l: [NAGINATA]
+  l: [NAGINATA, QWERTY]
 - p: [23, 37]
   k: Ctl+J
   l: [NAGINATA]

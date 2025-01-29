@@ -553,6 +553,10 @@ rect.held, rect.combo.held {
 </a><text x="896" y="116" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
+<rect rx="6" ry="6" x="882" y="120" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="887" y="124" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+</g>
+<g class="combo combopos-6">
 <path d="M588,88 l121,2" class="combo"/>
 <path d="M588,88 l177,-4" class="combo"/>
 <path d="M588,88 l-317,2" class="combo"/>

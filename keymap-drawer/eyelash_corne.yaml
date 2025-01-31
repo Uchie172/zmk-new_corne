@@ -556,7 +556,7 @@ combos:
   l: [Mac]
 - p: [23, 24, 5]
   k: {t: /, s: '?'}
-  l: [NAGINATA]
+  l: [NAGINATA, W_NAGINATA]
 - p: [24, 38]
   k: Ctl+K
   l: [NAGINATA]
@@ -568,18 +568,18 @@ combos:
   l: [NAGINATA]
 - p: [23, 24, 17]
   k: '&kakko'
-  l: [Mac]
+  l: [Mac, Win]
 - p: [17, 23, 24]
   k: '&ng_kakko1'
-  l: [NAGINATA]
+  l: [NAGINATA, W_NAGINATA]
 - p: [24, 15, 25]
   k: '&ng_kakko2'
-  l: [NAGINATA]
+  l: [NAGINATA, W_NAGINATA]
 - p: [42, 43]
   k: LEFT WIN
   l: [Win]
 - p: [7, 22, 36]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: '&win_mode'
   l: [Mac]
 - p: [7, 22, 36]
   k: '&mac_mode'

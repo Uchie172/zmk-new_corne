@@ -563,11 +563,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
 <text x="588" y="88" class="combo tap">&amp;kakko</text>
 </g>
-<g class="combo none combopos-7">
+<g class="combo combopos-7">
 <path d="M672,97 l0,-37" class="combo"/>
 <path d="M672,97 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="658" y="84" width="28" height="26" class="combo none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="663" y="88" height="18" width="18.0" class="combo none tap glyph mdi:minus-circle-outline"/>
+<rect rx="6" ry="6" x="658" y="84" width="28" height="26" class="combo"/>
+<text x="672" y="97" class="combo tap"><tspan style="font-size: 67%">&amp;win_mode</tspan></text>
 </g>
 </g>
 </g>
@@ -2775,12 +2775,19 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;ng_on_win</tspan></text>
 </g>
 <g class="combo combopos-0">
+<path d="M588,88 l121,2" class="combo"/>
+<path d="M588,88 l177,-4" class="combo"/>
+<path d="M588,88 l-317,2" class="combo"/>
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">&amp;kakko</text>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="241" y="193" width="28" height="26" class="combo"/>
 <text x="255" y="206" class="combo tap">
 <tspan x="255" dy="-0.6em">LEFT</tspan><tspan x="255" dy="1.2em">WIN</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <path d="M672,97 l0,-37" class="combo"/>
 <path d="M672,97 l0,37" class="combo"/>
 <rect rx="6" ry="6" x="658" y="84" width="28" height="26" class="combo"/>
@@ -3353,6 +3360,28 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
+</g>
+<g class="combo combopos-0">
+<path d="M607,72 l103,16" class="combo"/>
+<path d="M607,72 l159,11" class="combo"/>
+<path d="M607,72 l-280,-29" class="combo"/>
+<rect rx="6" ry="6" x="593" y="59" width="28" height="26" class="combo"/>
+<text x="607" y="72" class="combo tap">/</text>
+<text x="607" y="61" class="combo shifted">?</text>
+</g>
+<g class="combo combopos-1">
+<path d="M588,88 l-317,2" class="combo"/>
+<path d="M588,88 l121,2" class="combo"/>
+<path d="M588,88 l177,-4" class="combo"/>
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 60%">&amp;ng_kakko1</tspan></text>
+</g>
+<g class="combo combopos-2">
+<path d="M588,88 l177,-4" class="combo"/>
+<path d="M588,88 l-429,2" class="combo"/>
+<path d="M588,88 l233,2" class="combo"/>
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 60%">&amp;ng_kakko2</tspan></text>
 </g>
 </g>
 </g>

@@ -173,6 +173,13 @@
             timeout-ms = <300>;
             slow-release;
         };
+
+        windowskey {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <42 43>;
+            timeout-ms = <157>;
+            layers = <8>;
+        };
     };
 
     keymap {
@@ -272,6 +279,31 @@
 
             sensor-bindings = <&rgb_encoder>;
             label = "Settings";
+        };
+
+        Windows {
+            display-name = "QWERTY";
+            bindings = <
+&kp ESCAPE  &kp Q  &kp W  &kp E             &kp R           &kp T                              &kp UP                &kp Y            &kp U        &kp I      &kp O    &kp P      &kp SINGLE_QUOTE
+&kp TAB     &kp A  &kp S  &kp D             &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp MINUS  &kp SEMI
+&td0        &kp Z  &kp X  &kp C             &kp V           &kp B      &kp K_MUTE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH   &kp EQUAL
+                          &kp LEFT_CONTROL  &mt LALT SPACE  &lt 2 DEL                                                &lt 3 BACKSPACE  &lt 9 ENTER  &ng_on
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "Windows";
+        };
+
+        Win2 {
+            label = "Win_Shortcut";
+            bindings = <
+&kp K_MUTE    &none  &none       &kp LG(E)  &none  &none                            &none         &kp F7               &kp F8         &kp F9  &kp F10          &kp F11              &kp F12
+&kp C_VOL_DN  &none  &kp LG(D)   &none      &none  &none                     &none  &none  &none  &none                &kp F2         &kp F3  &kp F4           &kp F5               &kp F6
+&kp C_VOL_UP  &none  &kp LA(F4)  &none      &none  &kp LC(LA(DEL))  &none           &none         &kp LG(PRINTSCREEN)  &kp LG(LS(S))  &none   &kp PRINTSCREEN  &kp LA(PRINTSCREEN)  &none
+                                 &none      &none  &none                                          &none                &none          &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 

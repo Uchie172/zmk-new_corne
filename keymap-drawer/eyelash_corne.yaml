@@ -529,3 +529,6 @@ combos:
 - p: [42, 43]
   k: LEFT WIN
   l: [Windows]
+- p: [7, 22, 36]
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  l: [QWERTY]

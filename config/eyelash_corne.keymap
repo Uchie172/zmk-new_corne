@@ -102,6 +102,14 @@
 
             label = "MAC_MODE";
         };
+
+        ng_off_win: ng_off_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 8>;
+
+            label = "NG_OFF_WIN";
+        };
     };
 
     combos {

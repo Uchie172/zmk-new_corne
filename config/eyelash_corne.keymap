@@ -86,6 +86,14 @@
 
             label = "NG_KAKKO2";
         };
+
+        win_mode: win_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&bt BT_SEL 2 &to 8>;
+
+            label = "WIN_MODE";
+        };
     };
 
     combos {
@@ -179,6 +187,12 @@
             key-positions = <42 43>;
             timeout-ms = <157>;
             layers = <8>;
+        };
+
+        win_mode {
+            bindings = <&none>;
+            key-positions = <7 22 36>;
+            layers = <0>;
         };
     };
 

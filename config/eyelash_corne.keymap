@@ -82,9 +82,11 @@
         ng_kakko2: ng_kakko2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_PARENTHESIS &kp RPAR>;
+            bindings = <&macro_tap>, <&kp LPAR &kp RPAR>;
 
             label = "NG_KAKKO2";
+            wait-ms = <300>;
+            tap-ms = <150>;
         };
 
         win_mode: win_mode {
@@ -92,7 +94,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&to 8 &bt BT_SEL 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(230,100,48)>;
+                <&to 8 &bt BT_SEL 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(230,100,48) &rgb_ug RGB_EFF>;
 
             label = "WIN_MODE";
         };
@@ -102,7 +104,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&to 0 &bt BT_SEL 0 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50)>;
+                <&to 0 &bt BT_SEL 0 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50) &rgb_ug RGB_EFR>;
 
             label = "MAC_MODE";
         };

@@ -160,7 +160,7 @@
         ng_nakaguro {
             bindings = <&kp SLASH>;
             key-positions = <23 24 5>;
-            layers = <1>;
+            layers = <1 10>;
             timeout-ms = <150>;
             require-prior-idle-ms = <0>;
         };
@@ -189,21 +189,21 @@
         kakko {
             bindings = <&kakko>;
             key-positions = <23 24 17>;
-            layers = <0>;
+            layers = <0 8>;
             timeout-ms = <150>;
         };
 
         ng_kakko1 {
             bindings = <&ng_kakko1>;
             key-positions = <17 23 24>;
-            layers = <1>;
+            layers = <1 10>;
             timeout-ms = <142>;
         };
 
         ng_kakko2 {
             bindings = <&ng_kakko2>;
             key-positions = <24 15 25>;
-            layers = <1>;
+            layers = <1 10>;
             timeout-ms = <300>;
             slow-release;
         };
@@ -216,7 +216,7 @@
         };
 
         win_mode {
-            bindings = <&none>;
+            bindings = <&win_mode>;
             key-positions = <7 22 36>;
             layers = <0>;
         };

@@ -29,8 +29,25 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-
             label = "Shift";
+        };
+        mt_impl: mod-tap-by-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_BY_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        lt_impl: layer-tap-by-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BY_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
         };
     };
 
@@ -44,7 +61,6 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <30>;
     };
 

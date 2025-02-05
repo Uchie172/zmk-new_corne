@@ -360,10 +360,10 @@
         Windows {
             display-name = "Win";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E             &kp R           &kp T                                   &kp UP                &kp Y                 &kp U             &kp I       &kp O    &kp P      &kp SINGLE_QUOTE
-&kp TAB     &kp A  &kp S  &kp D             &kp F           &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                 &kp J             &kp K       &kp L    &kp MINUS  &kp SEMI
-&td0        &kp Z  &kp X  &kp C             &kp V           &kp B           &kp K_MUTE              &kp DOWN              &kp N                 &kp M             &kp COMMA   &kp DOT  &kp FSLH   &kp EQUAL
-                          &kp LEFT_CONTROL  &mt LALT SPACE  &lt_impl 2 DEL                                                &lt_impl 3 BACKSPACE  &lt_impl 9 ENTER  &ng_on_win
+&kp ESCAPE  &kp Q  &kp W  &kp E             &kp R           &kp T                                    &kp UP                &kp Y                  &kp U             &kp I       &kp O    &kp P      &kp SINGLE_QUOTE
+&kp TAB     &kp A  &kp S  &kp D             &kp F           &kp G                          &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &kp J             &kp K       &kp L    &kp MINUS  &kp SEMI
+&td0        &kp Z  &kp X  &kp C             &kp V           &kp B            &kp K_MUTE              &kp DOWN              &kp N                  &kp M             &kp COMMA   &kp DOT  &kp FSLH   &kp EQUAL
+                          &kp LEFT_CONTROL  &mt LALT SPACE  &lt_impl 11 DEL                                                &lt_impl 12 BACKSPACE  &lt_impl 9 ENTER  &ng_on_win
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -385,22 +385,37 @@
         layer_10 {
             label = "W_NAGINATA";
             bindings = <
-&kp ESCAPE  &ng Q  &ng W  &ng E        &ng R      &ng T                                   &kp UP                &ng Y                 &ng U      &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
-&kp TAB     &ng A  &ng S  &ng D        &ng F      &ng G                         &kp LEFT  &kp ENTER  &kp RIGHT  &ng H                 &ng J      &ng K      &ng L    &ng SEMI  &kp MINUS
-&td0        &ng Z  &ng X  &ng C        &ng V      &ng B           &kp K_MUTE              &kp DOWN              &ng N                 &ng M      &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
-                          &ng_off_win  &ng SPACE  &lt_impl 2 DEL                                                &lt_impl 3 BACKSPACE  &ng ENTER  &none
+&kp ESCAPE  &ng Q  &ng W  &ng E        &ng R      &ng T                                    &kp UP                &ng Y                  &ng U      &ng I      &ng O    &ng P     &kp SINGLE_QUOTE
+&kp TAB     &ng A  &ng S  &ng D        &ng F      &ng G                          &kp LEFT  &kp ENTER  &kp RIGHT  &ng H                  &ng J      &ng K      &ng L    &ng SEMI  &kp MINUS
+&td0        &ng Z  &ng X  &ng C        &ng V      &ng B            &kp K_MUTE              &kp DOWN              &ng N                  &ng M      &ng COMMA  &ng DOT  &ng FSLH  &kp EQUAL
+                          &ng_off_win  &ng SPACE  &lt_impl 11 DEL                                                &lt_impl 12 BACKSPACE  &ng ENTER  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_11 {
+            label = "W_Num";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&none  &kp LPAR  &kp RPAR           &kp GRAVE         &kp TILDE          &none                              &kp LC(UP_ARROW)                   &kp KP_EQUAL     &kp N7  &kp N8   &kp N9  &kp KP_PLUS      &kp BACKSPACE
+&none  &kp LBKT  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none                &kp LC(LEFT)  &kp LC(P)           &kp LC(RIGHT)  &kp KP_MULTIPLY  &kp N4  &kp N5   &kp N6  &kp KP_SUBTRACT  &kp COLON
+&none  &kp LBRC  &kp RIGHT_BRACE    &kp BACKSLASH     &kp PIPE           &none  &kp LG(N0)                  &kp LC(DOWN_ARROW)                 &kp COLON        &kp N1  &kp N2   &kp N3  &kp KP_DIVIDE    &kp KP_ASTERISK
+                                    &none             &kp LSHFT          &none                                                                 &kp ENTER        &kp N0  &kp DOT
             >;
+
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+        };
+
+        layer_12 {
+            label = "W_Mov";
+            bindings = <
+&none  &none     &none     &kp UP_ARROW    &kp PAGE_UP    &none                    &none         &none  &none           &none     &none  &none  &none
+&none  &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp END           &none  &none  &none  &none  &none           &none     &none  &none  &none
+&none  &none     &none     &none           &kp PAGE_DOWN  &none    &none           &none         &none  &none           &none     &none  &none  &none
+                           &none           &none          &none                                  &none  &kp LEFT_SHIFT  &kp LGUI
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 

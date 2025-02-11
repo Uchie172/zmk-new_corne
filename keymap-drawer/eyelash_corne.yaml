@@ -110,7 +110,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - KP PLUS
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
